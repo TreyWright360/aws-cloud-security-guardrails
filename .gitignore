@@ -1,0 +1,31 @@
+# Terraform working data and state
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Generated Terraform plans and Lambda packages
+*.tfplan
+terraform/tfplan
+terraform/tfplan.*
+terraform/post-apply.tfplan
+terraform/lambda_payload.zip
+
+# Verification output
+verify/
+trivy-policy-test.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# macOS and editors
+.DS_Store
+.vscode/
+.idea/
+
+# Commit provider lock files
+!.terraform.lock.hcl
